@@ -9,7 +9,7 @@ $out = "";
 $input = "070846-984606-199354-110900-862045-444713-121295-109842-549701";
 $result = generate($input, $out); // Result code will be stored to $result and generated activation id to $out
 
-$result -> 204455-473963-727110-378854-169136-901266-745572
+$out -> 204455-473963-727110-378854-169136-901266-745572
 
 Error codes: 
 0 is success

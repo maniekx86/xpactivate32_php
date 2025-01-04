@@ -1109,7 +1109,7 @@ function generate($installation_id_str, &$confirmation_id) { // static int gener
 
 
 	if (gmp_cmp($installation_id[18], 0x10) >= 0)
-		return $ERR_UNKNOWN_VERSION+100;
+		return $ERR_UNKNOWN_VERSION;
 
 	// #pragma pack(push, 1)
 	/*
@@ -1146,7 +1146,7 @@ function generate($installation_id_str, &$confirmation_id) { // static int gener
 	$version = uint32(gmp_and(gmp_shiftr($parsed->ProductIDLow, 52), 7)); // unsigned
 	$productId4 = uint32(gmp_or(gmp_shiftr($parsed->ProductIDLow, 55), gmp_shiftl($parsed->ProductIDHigh, 9))); // unsigned
 	if (gmp_cmp($version, gmp_init($totalCount == 41 ? 4 : 5))!=0)
-		return $ERR_UNKNOWN_VERSION+200;
+		return $ERR_UNKNOWN_VERSION;
 	//printf("Product ID: %05u-%03u-%07u-%05u\n", productId1, productId2, productId3, productId4);
 
 

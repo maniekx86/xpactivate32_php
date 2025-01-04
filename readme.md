@@ -29,4 +29,4 @@ ERR_UNLUCKY = 6;
 ```
 
 # Live demo
-A working live demo of this port with a simple frontend is available [here].(https://maniek86.xyz/dev/xpgen/xpgen.html). 
+A working live demo of this port with a simple frontend is available [here](https://maniek86.xyz/dev/xpgen/xpgen.html). 
